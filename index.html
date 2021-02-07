@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>toDoList :D</title>
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet"> 
 
@@ -14,26 +17,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
-        <div class="container">
-            <section class="todo-list">
-                <h1 class="list__title">오늘 해야 할 일들은? :D</h1>
-                <div class="list__input">
-                    <input type="text" class="input"/>
-                    <p>오늘의 할 일을 추가 하세요.</p>
-                    <div class="btn">입력</div>
-                </div>
-                <ul class="list__list jsList">
-
-                </ul>
-            </section>
-            <section class="days-info">
-                <div class="clock"></div>
-            </section>
+    <div class="container">
+        <div class="header">
+            <div class="clear">
+                <i class="fas fa-sync-alt"></i>
+            </div>
+            <div class="date"></div>
         </div>
+
+        <div class="content">
+            <ul id="list"></ul>
+        </div>
+
+        <form class="add-item">
+            <input type="text" id="item" placeholder="Add a to-do">
+            <div class="btn">추가</div>
+        </form>
     </div>
 
     <!-- JAVSCRIPT -->
-    <script src="app.js"></script>
+    <script src="todoList.js"></script>
+    <script src="clock.js"></script>
 </body>
 </html>

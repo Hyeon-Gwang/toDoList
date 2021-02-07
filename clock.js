@@ -1,19 +1,3 @@
-const btn = document.querySelector('.btn')
-
-btn.addEventListener('click', () => {
-    const input = document.querySelector('.input')
-    const list = document.querySelector('.jsList')
-
-    const content = input.value
-    let listItem = document.createElement('li')
-    listItem.innerHTML = content
-
-    list.appendChild(listItem)
-
-    input.value = ''
-
-})
-
 function getTime() {
     const clock = document.querySelector('.clock')
 
